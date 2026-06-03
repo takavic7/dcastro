@@ -1,0 +1,143 @@
+/* Estilo base ultra simple (Formato clásico) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px auto;
+    padding: 0 10px;
+    max-width: 1100px;
+    /* Ancho suficiente para las columnas */
+    line-height: 1.3;
+}
+
+/* --- ALINEACIÓN CABECERA (FOTO - TEXTO - LOGOS) --- */
+.bloque-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Foto a la izquierda */
+.celda-foto {
+    flex: 0 0 140px;
+    text-align: left;
+}
+
+.celda-foto p {
+    margin: 0 0 5px 0;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: auto;
+    border: 1px solid #000000;
+    display: block;
+}
+
+/* Datos en el centro */
+.celda-datos {
+    flex: 1;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.nombre-universitario {
+    font-size: 22pt;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.celda-datos p {
+    margin: 4px 0;
+    font-size: 12pt;
+}
+
+/* Logos a la derecha */
+.celda-logos {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.grupo-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-institucion {
+    height: 70px;
+    /* Tamaño controlado para los logos */
+    width: auto;
+    display: inline-block;
+}
+
+.texto-facultad {
+    margin-top: 6px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+/* --- ALINEACIÓN CUERPO (MENÚ LATERAL + CONTENIDO) --- */
+.cuerpo-pagina {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Barra de navegación de la izquierda */
+.menu-izquierdo {
+    flex: 0 0 140px;
+    text-align: left;
+}
+
+.menu-izquierdo ul {
+    list-style-type: disc;
+    padding-left: 18px;
+    margin-top: 0;
+}
+
+.menu-izquierdo li {
+    margin-bottom: 6px;
+}
+
+/* Sección de información de la derecha */
+.contenido-principal {
+    flex: 1;
+    padding-left: 35px;
+    text-align: left;
+}
+
+/* Títulos del contenido en azul clásico como en la captura */
+.contenido-principal h2 {
+    font-size: 16pt;
+    color: #0000ee;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* Formato de hipervínculos antiguos */
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+/* Líneas divisorias negras puras */
+hr {
+    border: 0;
+    border-top: 1px solid #000000;
+    margin: 15px 0;
+    width: 100%;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
